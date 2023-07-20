@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="nav__link">HOME</a>
+        <a href="#band" class="nav__link hide_small">BAND</a>
+        <a href="#tour" class="nav__link hide_small">TOUR</a>
+        <a href="#contact" class="nav__link hide_small">CONTACT</a>
+        <div class="dropdown_container hide_small">
+            <a class="nav__link">MORE <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown_list">
+                <li class="dropdown_list__item">Merchandise</li>
+                <li class="dropdown_list__item">Extras</li>
+                <li class="dropdown_list__item">Media</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="search-container hide_small">
+        <i class="search-container_search_icon fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="burger_menu_container">
+        <i class="fa-solid fa-bars"></i>
+        <ul class="burger_menu_list">
+            <li class="burger_menu_list__item">
+                <a href="#band" class="burger_menu_nav__link">BAND</a>
+            </li>
+            <li class="burger_menu_list__item">
+                <a href="#tour" class="burger_menu_nav__link">TOUR</a>
+            </li>
+            <li class="burger_menu_list__item">
+                <a href="#contact" class="burger_menu_nav__link">CONTACT</a>
+            </li>
+            <li class="burger_menu_list__item">
+                <a href="#" class="burger_menu_nav__link">MERCH</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main">
+    <div class="splash_screen_container">
+        <img class="splash_screen__img" src="images/img1.jpg" alt="Image">
+        <div class="splash_screen_text_container">
+            <h1 class="splash_screen__title">Beautiful first picture</h1>
+            <p class="splash_screen__sub_title">First sub title</p>
+        </div>
+    </div>
+
+    <section class="content_container" id="band">
+        <h1 class="content_container__title">THE BAND</h1>
+        <p class="content_container__sub_title">We love music</p>
+        <p class="content_container__content animated animation__from_bottom_init" data-animation="animateFromBottom">We have created a fictional band website. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="content_container__images_container">
+            <div class="content_container__image_container animated horizontal_cascade__init" data-animation="horizontalCascade">
+                <h2 class="image_container__title">Name</h2>
+                <img src="./images/container_image.png" alt="" class="content_container__image">
+            </div>
+            <div class="content_container__image_container animated horizontal_cascade__init" data-animation="horizontalCascade">
+                <h2 class="image_container__title">Name</h2>
+                <img src="./images/container_image.png" alt="" class="content_container__image">
+            </div>
+            <div class="content_container__image_container animated horizontal_cascade__init" data-animation="horizontalCascade">
+                <h2 class="image_container__title">Name</h2>
+                <img src="./images/container_image.png" alt="" class="content_container__image">
+            </div>
+        </div>
+    </section>
+
+    <section class="content_container content_container_black  not_intersecting" id="tour">
+        <div class="modal">
+            <div class="modal__header">
+                <i class="fa-solid fa-xmark modal_header__close_button close__button"></i>
+                <h1 class="modal__title">
+                    <i class="fa-solid fa-suitcase"></i>
+                    Tickets
+                </h1>
+            </div>
+            <div class="modal__main">
+                <div class="modal__form">
+                    <label class="modal_form__label">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input class="modal_form__input" placeholder="How many?" type="text">
+                    <label class="modal_form__label">
+                        <i class="fa-solid fa-user"></i>
+                        Send To
+                    </label>
+                    <input class="modal_form__input" placeholder="Enter email" type="text">
+                    <button class="modal_form__button">
+                        Pay
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="modal_footer__close_button close__button">
+                    Close
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="modal_footer__text_container">
+                    <p class="modal_footer__text_content">
+                        Need <a href="" class="footer_text_content__link"> help? </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="content_container__title content_container__title_white ">TOUR DATES</h1>
+        <p class="content_container__sub_title content_container__sub_title_italic sub_title_gray">Remember to book your tickets!</p>
+        <ul class="content_container__list">
+            <li class="content_container__list_item animated">September <span class="list_item__tag">Sold out</span></li>
+            <li class="content_container__list_item animated">October <span class="list_item__tag">Sold out</span></li>
+            <li class="content_container__list_item animated">November  <span class="list_item__tag list_item__tag_right">3</span></li>
+        </ul>
+        <div class="content_container__cards_container">
+            <div class="cards_container__card animated horizontal_cascade__init" data-animation="horizontalCascade">
+                <img src="images/newyork.jpg" alt="" class="card__image">
+                <div class="card__info">
+                    <h1 class="card__title">New York</h1>
+                    <p class="card__sub_title card__sub_title__gray">Fri 27 Nov 2016</p>
+                    <p class="card__text_content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="card__button">Buy tickets</button>
+                </div>
+            </div>
+            <div class="cards_container__card animated horizontal_cascade__init" data-animation="horizontalCascade">
+                <img src="images/newyork.jpg" alt="" class="card__image">
+                <div class="card__info">
+                    <h1 class="card__title">New York</h1>
+                    <p class="card__sub_title card__sub_title__gray">Fri 27 Nov 2016</p>
+                    <p class="card__text_content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="card__button">Buy tickets</button>
+                </div>
+            </div>
+            <div class="cards_container__card animated horizontal_cascade__init" data-animation="horizontalCascade">
+                <img src="images/newyork.jpg" alt="" class="card__image">
+                <div class="card__info">
+                    <h1 class="card__title">New York</h1>
+                    <p class="card__sub_title card__sub_title__gray">Fri 27 Nov 2016</p>
+                    <p class="card__text_content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="card__button">Buy tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content_container" id="contact">
+        <h1 class="content_container__title">CONTACT</h1>
+        <p class="content_container__sub_title">Fan? Drop a note!</p>
+        <div class="contacts__container">
+            <div class="contacts__info">
+                <div class="contacts_info_row">
+                    <i class="fa-solid fa-location-dot contacts_row__icon"></i>
+                    <p class="contacts_row__title">Chicago, US</p>
+                </div>
+                <div class="contacts_info_row">
+                    <i class="fa-solid fa-phone contacts_row__icon"></i>
+                    <p class="contacts_row__title"> Phone: +00 151515</p>
+                </div>
+                <div class="contacts_info_row">
+                    <i class="fa-solid fa-envelope contacts_row__icon"></i>
+                    <p class="contacts_row__title">Email: mail@mail.com</p>
+                </div>
+            </div>
+            <form action="" class="contacts__form">
+                <input class="contacts_form__input animated fade_in__init" data-animation="fadeIn" placeholder="Name" type="text">
+                <input class="contacts_form__input animated fade_in__init" data-animation="fadeIn" placeholder="Email" type="text">
+                <input class="contacts_form__input grid_row_2_span_end animated fade_in__init" data-animation="fadeIn" placeholder="Message" type="text">
+                <button class="contacts_form__button">SEND</button>
+            </form>
+        </div>
+    </section>
+
+    <img class="banner_image" src="images/map.jpg" alt="">
+
+    <section class="content_container ">
+        <div class="social_media_container">
+            <i class="fa-brands fa-facebook animated wavy__init" data-animation="wavy"></i>
+            <i class="fa-brands fa-instagram animated wavy__init" data-animation="wavy"></i>
+            <i class="fa-brands fa-square-snapchat animated wavy__init" data-animation="wavy"></i>
+            <i class="fa-brands fa-pinterest animated wavy__init" data-animation="wavy"></i>
+            <i class="fa-brands fa-twitter animated wavy__init" data-animation="wavy"></i>
+            <i class="fa-brands fa-linkedin-in animated wavy__init" data-animation="wavy"></i>
+        </div>
+    </section>
+</main>
+
+<div class="modal_overlay">
+
+</div>
+
+</body>
+<script src="https://kit.fontawesome.com/7bf16121b2.js" crossorigin="anonymous"></script>
+<script src="/scripts/script.js"></script>
+</html>
